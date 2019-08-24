@@ -1,0 +1,7 @@
+docker run -d -it --name ubu ubuntu sh -c 'echo "Input website:"; read website; echo "Searching..."; sleep 1; curl http://$website;'
+docker exec -it ubu bash
+apt-get update
+apt-get -y install curl
+exit
+docker attach ubu
+helsinki.fi
