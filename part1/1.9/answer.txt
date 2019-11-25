@@ -1,0 +1,2 @@
+docker run -d -p 8080:80 devopsdockeruh/ports_exercise
+firefox --new-window http://localhost:8080
