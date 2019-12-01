@@ -9,5 +9,10 @@ services:
 
   back:
     build: ../../part1/1.11/
+    environment:
+      - REDIS=redis
     ports:
       - 8000:8000
+
+  redis:
+    image: redis:latest
